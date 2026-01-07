@@ -10,7 +10,7 @@
     <div class="container">
       <div class="product">
         <div class="gallery">
-          <img src="img/image1.png" alt="" />
+          <img src="img/image1.png" alt="" id="productImg" />
 
           <div class="controls">
             <span class="btn active"></span>
@@ -83,5 +83,20 @@
         </div>
       </div>
     </div>
+
+    <script>
+      let productImg = document.getElementById("productImg");
+      let btn = document.getElementsByClassName("btn");
+
+      btn[0].onclick = function () {
+        productImg.src = "img/image1.png";
+      };
+      btn[1].onclick = function () {
+        productImg.src = "img/image2.png";
+      };
+      btn[2].onclick = function () {
+        productImg.src = "img/image3.png";
+      };
+    </script>
   </body>
 </html>
